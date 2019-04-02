@@ -1,8 +1,10 @@
 body {
   text-align: center;
-  background: green;
   color: gold;
   font-family: 'Merriweather', serif;
+  background-color: #00540d;
+background-image: url("https://www.transparenttextures.com/patterns/felt.png");
+
 }
 
 .jumbotron{
