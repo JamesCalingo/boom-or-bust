@@ -1,0 +1,18 @@
+body {
+  text-align: center;
+  background: green;
+  color: gold;
+  font-family: 'Merriweather', serif;
+}
+
+.jumbotron{
+  color: white
+}
+
+h3{
+  color: red
+}
+
+img{
+  align-content: center
+}
