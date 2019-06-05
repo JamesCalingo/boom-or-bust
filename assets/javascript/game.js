@@ -35,14 +35,24 @@ $("img").on("click", function(){
 
 // Win and loss conditions with reset
 if(goal === total){
-  alert("You won! Click OK to play again!\nRemember, the goal and chip values are different this time, so good luck!");
+  Swal.fire({
+    title: 'You Win!',
+    text: 'Do you want to try again? Remember, the values are different this time!',
+    type: 'success',
+    confirmButtonText: "Let's go!"
+  });
   wins++;
   newGame ();
   $("#win").text(wins);
 }
 
 if(goal < total){
-  alert("You busted! Too bad...better luck next time? Click OK to play again, and remember that the goal and chip values are different this time.");
+  Swal.fire({
+    title: 'You Went Over!',
+    text: "Try again? (Remember, the values are different this time!)",
+    type: 'error',
+    confirmButtonText: 'Try again!'
+  })
   losses++;
   newGame ();
   $("#lose").text(losses);
