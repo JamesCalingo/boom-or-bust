@@ -51,7 +51,7 @@ if(goal < total){
     title: 'You Went Over!',
     text: "Try again? (Remember, the values are different this time!)",
     type: 'error',
-    confirmButtonText: 'Try again!'
+    confirmButtonText: "I'll try again!"
   })
   losses++;
   newGame ();
